@@ -122,11 +122,11 @@ Profiling operations can be highly memory intensive and can take up to 23GB of m
 
 #### No Profile
 
-![](/home/sambit/learn/EVA-2-Group/docs/profile-np.png)
+![](profile-np.png)
 
 #### With Profile
 
-![](/home/sambit/learn/EVA-2-Group/docs/profile.png)
+![](profile.png)
 
 
 
@@ -138,17 +138,17 @@ While accuracy remained almost the same around 92 to 93%, the training time with
 
 As can be seen in the below image below, the CPU and GPU are waiting on data between each epoch. An operation called `IteratorGetNextSync`take about 25s. Hence, both CPU and GPU threads for compuation are starved for data. 
 
-![](/home/sambit/learn/EVA-2-Group/docs/no_pipe.png)
+![](no_pipe.png)
 
 As shown below the `IteratorGetNextSync`.
 
-![](/home/sambit/learn/EVA-2-Group/docs/no_pipe_iterate.png)
+![](no_pipe_iterate.png)
 
 Reading of data from disk:
 
 Distinct read blocks for test as well as training sets. 
 
-![](/home/sambit/learn/EVA-2-Group/docs/no-pipe-read.png)
+![](no-pipe-read.png)
 
 
 
@@ -156,4 +156,4 @@ Distinct read blocks for test as well as training sets.
 
 The `IteratorGetNextSync` is just 0.2s down from 25s. As it can be seen, the data is uniformly read from the files. However, the performance gains are only 1-2s per epoch as the data is available all on the disc. The GPU is more evenly loaded. However, the load cycles can be improved. On zooming the data one can observe massive gaps between operations showing ideal CPU and GPU. 
 
-![](/home/sambit/learn/EVA-2-Group/docs/pipe_line.png)
+![](pipe_line.png)
