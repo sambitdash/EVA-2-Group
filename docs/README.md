@@ -64,6 +64,8 @@ The `dataset.map` method is responsible for all the transformation activities. W
 
 ### Image Manipulation Operations
 
+The TFRecord requires these methods are always executed in the Graph mode even if the code provided is simple Python code that can be run in the eager execution mode. Hence, the code shown below all are written in TensorFlow functions with Tensors as input and output. 
+
 #### Training
 
 The following image augmentation methods are carried out on the image. As the methods applied are on individual images `tf.map_fn` is used to vectorize the code as shown above. 
