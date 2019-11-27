@@ -239,7 +239,7 @@ def getLandmarks(faceDetector, landmarkDetector, im, FACE_DOWNSAMPLE_RATIO = 1):
                   ]
 
     rect = dlib.rectangle(*maxRect)
-    print(maxRect)
+    #print(maxRect)
     scaledRect = dlib.rectangle(int(rect.left()*FACE_DOWNSAMPLE_RATIO),
                              int(rect.top()*FACE_DOWNSAMPLE_RATIO),
                              int(rect.right()*FACE_DOWNSAMPLE_RATIO),
