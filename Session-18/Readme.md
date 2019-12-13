@@ -5,6 +5,9 @@
 
 
 
+* Face Alignment and Stabilization - 10 FPS. **Landmarks are prominent**.
+  * [![](http://img.youtube.com/vi/Y7SgYXHDke8/0.jpg)](http://www.youtube.com/watch?v=Y7SgYXHDke8 "Face Alignment and Stabilization | 10 FPS")
+
 * Face Alignment and Stabilization - 15 FPS
   * [![](http://img.youtube.com/vi/ut5pQAaAMWU/0.jpg)](http://www.youtube.com/watch?v=ut5pQAaAMWU "Face Alignment and Stabilization - 15 FPS")
 
