@@ -6,6 +6,6 @@
 * Dataset : [Raw Imdb Reviews can be downloaded from here.](http://mng.bz/0tIo)
 * Results:
   * Script: [SentimentUsingGlove.ipynb](./SentimentUsingGlove.ipynb)
-  * Tranining Samples: 8000
+  * Training Samples: 8000
   * Validation Accuracy: 68%
 
