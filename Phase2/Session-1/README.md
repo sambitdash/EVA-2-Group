@@ -10,7 +10,7 @@
     * Training Samples: 8000
     * Validation Accuracy: 70%
     * Test Data Accuracy: 71.45%
-  * Update Embedding is permitted
+  * Update Embedding is permitted (The embedding layer is constrained to UnitNorm)
     * Script: [SentimentUsingGlove-UpateEmbedding.ipynb](./SentimentUsingGlove-UpateEmbedding.ipynb)
     * Training Samples: 8000
     * Validation Accuracy: 84.15%
