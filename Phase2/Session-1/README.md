@@ -7,5 +7,6 @@
 * Results:
   * Script: [SentimentUsingGlove.ipynb](./SentimentUsingGlove.ipynb)
   * Training Samples: 8000
-  * Validation Accuracy: 68%
+  * Validation Accuracy: 70%
+  * Test Data Accuracy: 65%
 
